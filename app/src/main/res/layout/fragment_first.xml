@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="@color/greem"
+    android:gravity="center"
+    tools:context=".fragment.FirstFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Login Here" />
+
+        <EditText
+            android:id="@+id/useId"
+            android:layout_width="276dp"
+            android:layout_height="54dp"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:hint="Enter Username"
+            android:background="@drawable/custom_input"
+            android:inputType="textPersonName"
+            app:layout_constraintVertical_bias="0.368" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="276dp"
+            android:layout_height="54dp"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:hint="Enter passward"
+            android:inputType="textPassword"
+            android:background="@drawable/custom_input"
+            app:layout_constraintVertical_bias="0.093" />
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="276dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="228dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+
+            android:backgroundTint="@color/black1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Password"
+            app:layout_constraintVertical_bias="0.825" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="138dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black1"
+            android:textColor="@color/white"
+            android:text="SignUp" />
+
+        <Button
+            android:id="@+id/forget"
+            android:layout_width="138dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black1"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+
+            android:layout_weight="1"
+            android:text="Forget" />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
